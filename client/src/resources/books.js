@@ -61,7 +61,11 @@ export const BookCreate = props => (
       <SimpleForm>
         <TextInput source="title" />
         <NumberInput source="price" />
-        <ReferenceInput label="Author" source="author.id" reference="author">
+        <ReferenceInput
+          label="Author"
+          source="author.id"
+          reference="author"
+          allowEmpty>
           <SelectInput optionText="name" />
         </ReferenceInput>
       </SimpleForm>

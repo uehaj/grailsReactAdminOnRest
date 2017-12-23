@@ -35,7 +35,7 @@ const AuthorTitle = ({ record }) => {
 export const AuthorEdit = props => (
   <ErrorBoundary>
     <Edit title={<AuthorTitle />} {...props}>
-      <SimpleForm save={() => console.log('save')}>
+      <SimpleForm>
         <DisabledInput source="id" />
         <TextInput source="name" />
       </SimpleForm>
