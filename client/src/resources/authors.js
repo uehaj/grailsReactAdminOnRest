@@ -29,7 +29,7 @@ export const AuthorList = props => (
 );
 
 const AuthorTitle = ({ record }) => {
-  return <span>Author {record ? `"${record.title}"` : ''}</span>;
+  return <span>Author {record ? `"${record.name}"` : ''}</span>;
 };
 
 export const AuthorEdit = props => (
